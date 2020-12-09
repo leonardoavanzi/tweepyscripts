@@ -9,7 +9,7 @@ def tweets(username):
 	auth.set_access_token('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX', 'XXXXXXXXXXXXXXXX')
 	api = tweepy.API(auth)
 
-	number_of_tweets = 10
+	number_of_tweets = 400
 
 	tweets_for_csv = []
 	for tweet in tweepy.Cursor(api.user_timeline,api.search,q=username,screen_name = username, tweet_mode = 'extended').items(number_of_tweets):
