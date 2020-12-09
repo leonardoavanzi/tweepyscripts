@@ -25,6 +25,7 @@ python reply-mention.py
 ``` 
 
 ```
+cd tweepyscripts
 python get_Tweet2.0.py @USERNAME
 ```
 
