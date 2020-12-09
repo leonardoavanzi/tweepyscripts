@@ -2,7 +2,7 @@ import tweepy
 import time
 
 # API tokens here
-auth = tweepy.OAuthHandler('XXXXXXXXXXXXXXXXXXXXXXXXXX', 'XXXXXXXXXXXXXXXX')
+auth = tweepy.OAuthHandler('XXXXXXXXXXXXXXXXXXXXXXXXXX', 'XXXXXXXXXXXXXXXXXXXX')
 auth.set_access_token('XXXXXXXXXXXXXXXXXXXXXXXXXXX', 'XXXXXXXXXXXXXXXXXXXXXXXXXXXX')
 
 api = tweepy.API(auth, wait_on_rate_limit=True, wait_on_rate_limit_notify=True)
