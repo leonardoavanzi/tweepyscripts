@@ -21,7 +21,7 @@ RESET = "\033[0;0m" # ""
 
 api.screen_name = input('\033[96m'+'type user @ here: ') #
 
-for status in tweepy.Cursor(api.user_timeline, screen_name=api.screen_name, tweet_mode="extended",).items(30):
+for status in tweepy.Cursor(api.user_timeline, screen_name=api.screen_name, tweet_mode="extended",).items(100):
   #  print (status.created_at, tweet.id)
      print('\x1b[1;37m'+'Tweet feito no dia: ', status.created_at )
      print('\x1b[1;31m'+'\n Tweet: '+ '\x1b[1;34m' +status.full_text+'\n')
